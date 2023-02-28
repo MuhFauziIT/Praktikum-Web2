@@ -50,8 +50,7 @@ echo $kumpulan_nilai[0]["nim"];
         <td><?php echo $nilai["uts"]?></td>
         <td><?php echo $nilai["uas"]?></td>
         <td><?php echo $nilai["tugas"]?></td>
-        <td><?php echo $nilai_akhir ?></td>
-        <td><?php number_format($nilai_akhir, 2, ",", ".") ?></td>
+        <td><?= number_format($nilai_akhir, 2, ",", ".") ?></td>
     </tr>
 
     <?php endforeach; ?>
